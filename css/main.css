@@ -1,33 +1,70 @@
 
 body {
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     width: 800px;
     height: 600px;
     margin: auto;
-    padding: 5px;
     border: 1px solid;
     border-color: #e14859;  
     overflow: hidden;
 }
 
-.window {
+.header {
+    box-sizing: border-box;
     position: fixed;
-
+    height: 70px;
+    width: 798px;
+    border-bottom: 1px solid #e14859;
+    padding: 10px;
+    background-color: rgb(243, 242, 225);;
 }
 
-.body {
-
+.description {
+    font-size: 16px;
+    color: dimgray;
 }
+
+.x {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: dimgrey;
+}
+
+.author-logo:hover {
+    background-color:rgb(43, 42, 42);
+    color: floralwhite;
+    cursor: pointer;
+}
+
+.cur:hover,
+.x:hover {
+    color: rgb(43, 42, 42);
+    cursor: pointer;
+}
+
+.space {
+width: 800px;
+height: 70px;
+}
+
+.content {
+    height: 528px;
+    flex-direction: column;
+    overflow: auto;
+}
+
 .author-message-date {
     padding: 10px;
     font-size: 16px;
-    color: gray;
+    color: rgb(83, 83, 83);
 }
 
 .author-logo {
     line-height: 50px;
-    background-color: indianred;
+    background-color: dimgrey;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -36,37 +73,38 @@ body {
 
 .message {
     display: flex;
-    align-items: flex-start;
-    padding: 10px;
-    
+    align-items: stretch;
 }
 
 .author-info {
-    width: 160px;
+    width: 150px;
     display: flex;
     align-items: center;
     padding: 10px;
+    background-color: gainsboro;
     }
+
+.author-message {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 10px;
+    border-left: 2px solid rgb(190, 177, 132);
+    height: 100%;
+    background-color: tan;
+}
+    
+
+.author-name {
+    font-size: 18px;
+    color: rgb(235, 82, 82);
+    padding: 10px;
+}
 
 .author-message-text {
     border: 1px solid;
     border-color: lightblue;
     border-radius: 5px;
     padding: 10px;
+    background-color: peachpuff; 
 }
-
-.author-message {
-    width: 550px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    padding: 10px;
-    border-left: 2px solid green;
-    height: 100%;}
-
-.author-name {
-    font-size: 18px;
-    color: lightcoral;
-    padding: 10px;
-}
-
